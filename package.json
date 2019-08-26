@@ -21,6 +21,7 @@
   "homepage": "https://github.com/albertofragoso/admin#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },

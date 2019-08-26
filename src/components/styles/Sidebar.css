@@ -1,0 +1,51 @@
+.Sidebar {
+  width: 20vw;
+  height: 100vh;
+}
+
+.Sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.Sidebar img {
+  width: 50px;
+}
+
+.Sidebar span {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #e95794;
+}
+
+.Sidebar-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Sidebar {
+    display: none;
+  }
+  .Sidebar-button {
+    display: block;
+    position: fixed;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 50px;
+    border: 1px solid #dae0e5;
+    text-align: center;
+    line-height: 40px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .toggle {
+    width: 80vw;
+    display:block;
+  }
+}
