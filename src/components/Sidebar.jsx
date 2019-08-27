@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 import logo from '../images/logo.png'
 
@@ -17,8 +18,10 @@ const Sidebar = () => {
       <span className="Sidebar-button" onClick={handleToggle}>🍔</span>
       <div className={SidebarToggle}>
         <div className="Sidebar-logo">
-          <img src={logo} alt="Admin logo" />
-          <span>Conektando</span>
+          <Link to="/">
+            <img src={logo} alt="Admin logo" />
+            <span>Conektando</span>
+          </Link>
         </div>
         <div className="list-group list-group-flush">
           <a href="#" className="list-group-item list-group-item-action bg-light">💳 Payments</a>
