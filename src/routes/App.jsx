@@ -13,7 +13,7 @@ const App = () => (
       <Layout>
         <Switch>
           <Route exact path="/" component={Payments} />
-          <Route path="" component={NotFound} />
+          <Route component={NotFound} />
         </Switch>
       </Layout>  
       <Footer />
