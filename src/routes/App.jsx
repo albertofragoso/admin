@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Payments from '../pages/Payments'
+import NotFound from '../pages/NotFound'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 const App = () => (
@@ -12,6 +13,7 @@ const App = () => (
       <Layout>
         <Switch>
           <Route exact path="/" component={Payments} />
+          <Route path="" component={NotFound} />
         </Switch>
       </Layout>  
       <Footer />
