@@ -9,7 +9,7 @@ const PaymentDetail = props => {
     <div className="container-fluid">
       <h1 className="mt-4">Payment Details</h1>
 
-      <Data payment={payment} />
+      {/* <Data payment={payment} /> */}
 
       {/*Breakdown*/}
 
