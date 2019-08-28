@@ -13,14 +13,14 @@ const PaymentDetail = props => {
   const handleClick = () => setData(!data)
 
   return(
-    <div className="PaymentDetail container-fluid">
+    <div className="PaymentDetail container-fluid mb-5">
       <h1 className="mt-4">Payment Details</h1>
       <ul className="nav nav-tabs mb-3">
         <li className="nav-item">
-          <span onClick={handleClick} className={data ? `nav-link active` : 'nav-link'}>Data</span>
+          <span onClick={handleClick} className={data ? `nav-link active disabled` : 'nav-link'}>Data</span>
         </li>
         <li className="nav-item">
-          <span onClick={handleClick} className={!data ? `nav-link active` : 'nav-link'}>Breakdown</span>
+          <span onClick={handleClick} className={!data ? `nav-link active disabled` : 'nav-link'}>Breakdown</span>
         </li>
       </ul>
       {data

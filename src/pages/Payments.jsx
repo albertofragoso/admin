@@ -9,7 +9,7 @@ const Payments = () => {
   const payments = useGetPayments(API)
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mb-5">
       <h1 className="mt-4">Payments</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptates sint. Quae deleniti eos aspernatur minus eligendi, est suscipit illum, molestiae dicta dolorem tenetur doloremque eius hic. Consequuntur, aliquam aperiam.</p>
       {

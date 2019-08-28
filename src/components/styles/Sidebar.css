@@ -14,14 +14,28 @@
   width: 50px;
 }
 
-.Sidebar span {
+.Sidebar-logo .logo {
   font-size: 1.7rem;
   font-weight: 900;
   color: #e95794;
 }
 
+.Sidebar span {
+  cursor: pointer;
+}
+
 .Sidebar-button {
   display: none;
+}
+
+.z-index{
+  z-index: 1000;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .Sidebar img {
+    display: none
+  }
 }
 
 @media (max-width: 768px) {

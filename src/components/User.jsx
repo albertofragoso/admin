@@ -23,10 +23,10 @@ const User = () => {
         </Link>
       </li>
       <li className="nav-item dropdown">
-        <a href="#" className="nav-link dropdown-toggle" onClick={handleDropdown}></a>
+        <span className="nav-link dropdown-toggle" onClick={handleDropdown}></span>
         <div className={Dropdown}>
-          <a href="#" className="dropdown-item">Profile</a>
-          <a href="#" className="dropdown-item">Logout</a>
+          <span className="dropdown-item">Profile</span>
+          <span className="dropdown-item">Logout</span>
         </div>
       </li>
     </ul>
