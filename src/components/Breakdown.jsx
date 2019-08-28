@@ -2,7 +2,7 @@ import React from 'react'
 import LineItem from './LineItem'
 
 const Breakdown = ({ payment }) => (
-  <table className="table table-hover">
+  <table className="table table-hover table-responsive">
     <thead>
       <tr>
         <th scope="col">Quantity</th>
