@@ -19,21 +19,23 @@ const Payments = () => {
               <span className="sr-only">Loading...</span>
             </div>
           </div>
-        : <table className="table table-hover table-responsive">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Date</th>
-                <th scope="col">Payment status</th>
-                <th scope="col">Payment type</th>
-                <th scope="col">Customer</th>
-                <th scope="col">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              { payments.map(payment => <PaymentItem payment={payment} key={payment.id} />) }
-            </tbody>
-          </table>
+        : <div className="table-responsive"> 
+            <table className="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Payment status</th>
+                  <th scope="col">Payment type</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                { payments.map(payment => <PaymentItem payment={payment} key={payment.id} />) }
+              </tbody>
+            </table>
+          </div>
       }
     </div>
   )
