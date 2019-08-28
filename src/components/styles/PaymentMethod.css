@@ -1,0 +1,10 @@
+.Payment-method-brand {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.Payment-method {
+  background-color: #211d45;
+  margin: 0 -1.25rem -1.25rem;
+}
