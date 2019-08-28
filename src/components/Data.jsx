@@ -1,5 +1,6 @@
 import React from 'react'
 import PaymentStatus from '../components/PaymentStatus'
+import Client from '../components/Client'
 
 const Data = ({ payment }) => (
   <div class="row">
@@ -7,19 +8,7 @@ const Data = ({ payment }) => (
       <PaymentStatus payment={payment} />
     </div>
     <div class="col-md-3 col-sm-12 mb-3">
-      {/*Client*/}
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">Client</h5>
-          <hr/>
-          <h6 className="mb-2 text-secondary">Name:</h6>
-          <p className="card-text">{payment.customer.name}</p>
-          <h6 className="mb-2 text-secondary">Email:</h6>
-          <p className="card-text">{payment.customer.email}</p>
-          <h6 className="mb-2 text-secondary">Phone number:</h6>
-          <p className="card-text">{payment.customer.phone}</p>
-        </div>
-      </div>
+      <Client payment={payment} />
     </div>
     <div class="col-md-3 col-sm-12 mb-3">
       {/*PaymentMethod*/}
