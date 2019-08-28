@@ -1,4 +1,5 @@
 import React from 'react'
+import LineItem from './LineItem'
 
 const Breakdown = ({ payment }) => (
   <table className="table table-hover">

@@ -1,5 +1,6 @@
 import React from 'react'
 import Data from '../components/Data'
+import Breakdown from '../components/Breakdown'
 
 const PaymentDetail = props => {
 
@@ -11,7 +12,7 @@ const PaymentDetail = props => {
 
       {/* <Data payment={payment} /> */}
 
-      {/*Breakdown*/}
+      <Breakdown payment={payment} />
 
     </div>
 
