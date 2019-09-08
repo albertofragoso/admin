@@ -1,6 +1,7 @@
 import React from 'react'
 import useGetPayments from '../hooks'
 import PaymentItem from '../components/PaymentItem'
+import Loader from '../components/Loader'
 import { Link } from 'react-router-dom'
 
 const API = 'https://us-central1-admin-conekta.cloudfunctions.net/api'
@@ -14,11 +15,7 @@ const Payments = () => {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptates sint. Quae deleniti eos aspernatur minus eligendi, est suscipit illum, molestiae dicta dolorem tenetur doloremque eius hic. Consequuntur, aliquam aperiam.</p>
       {
         !payments.length
-        ? <div className="text-center">
-            <div className="spinner-border text-primary mt-5" style={{width: "3rem", height: "3rem"}} role="status">
-              <span className="sr-only">Loading...</span>
-            </div>
-          </div>
+        ? <Loader />
         : <div className="table-responsive"> 
             <table className="table table-hover">
               <thead>
